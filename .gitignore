@@ -1,0 +1,148 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+.report/
+
+# Runtime data
+.next/
+.nuxt/
+.vuepress/dist
+.serverless/
+.fuse/
+.build/
+.dist/
+
+# Directory for compiled output
+build/
+dist/
+public/build/
+
+# Dependencies
+node_modules/
+jspm_packages/
+
+# TypeScript v1 declaration files
+typings/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional stylelint cache
+.stylelintcache
+
+# Microbundle output
+dist/
+
+# Optional REPL history
+.node_repl_history
+
+# IDEs and editors
+.vscode
+.idea
+*.sublime-project
+*.sublime-workspace
+*.DS_Store
+Thumbs.db
+
+# macOS specific files
+.DS_Store
+
+# dotenv environment variables file
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# private configuration
+.nyc_output/
+coverage/
+.c9/
+.python-version
+.pnp.*
+
+# yarn v2
+.yarn/cache
+.yarn/unplu-gged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.cjs
+.pnp.js
+
+# misc
+*.tgz
+*.zip
+*.rar
+*.7z
+*.gz
+*.bz2
+*.xz
+*.patch
+.project
+.classpath
+.settings
+target/
+.factorypath
+
+# Svelte specific
+.svelte-kit
+
+# output from `npm pack`
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env
+.env.development.local
+.env.test.local
+.env.env.production.local
+.env.local
+
+# next.js build output
+.next
+
+# vercel deployment build output
+.vercel
+
+# Serverless directories
+.serverless/
+
+# local development env artifacts
+.DS_Store
+.gitattributes
+.gitkeep
+.gitmodules
+.npmignore
+.prettierignore
+.prettierrc
+.prettierrc.js
+.eslintignore
+.eslintrc
+.eslintrc.js
+.github
+.vscode
+.idea
+.swc
+.circleci
+.travis.yml
+.editorconfig
+.npmrc
+.yarnrc
+.browserslistrc
+.flowconfig
+.terraform
+
+# Explicitly ignore the nested saloni-portfolio directory itself
+/saloni-portfolio/

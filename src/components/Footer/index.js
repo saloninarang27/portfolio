@@ -107,7 +107,7 @@ function Footer() {
           <SocialMediaIcon href={Bio.email} target="display"><Email /></SocialMediaIcon>
         </SocialMediaIcons>
         <Copyright>
-          &copy; 2024 Saloni. All rights reserved.
+          &copy; 2025 Saloni. All rights reserved.
         </Copyright>
 
       </FooterWrapper>

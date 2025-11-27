@@ -12,11 +12,13 @@ html{
   scroll-behavior: smooth;
 }
 
-body{
-  margin: 0px !important;
-  padding: 0;
-  font-family: 'Montserrat', sans-serif;
+body {
+  margin: 0;
+  font-family: 'Space Grotesk', sans-serif;
+  background-color: #F9FAFB;
+  color: #f3b7b7;
 }
+
 
 /* width */
 ::-webkit-scrollbar {

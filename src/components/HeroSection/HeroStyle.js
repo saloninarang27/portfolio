@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 export const HeroContainer = styled.div`
-  background: ${({ theme }) => theme.card_light};
+  background: linear-gradient(135deg,rgb(243, 204, 250),rgb(243, 161, 235));
   display: flex;
   justify-content: center;
   position: relative;
@@ -78,12 +78,14 @@ export const HeroRightContainer = styled.div`
   width: 100%;
   display: flex;
   order: 2;
-  justify-content: end;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
   gap: 12px;
   @media (max-width: 960px) {
     order: 1;
     justify-content: center;
-    align-items: center;
+    align-items: top;
     margin-bottom: 80px;
   }
 
@@ -93,24 +95,34 @@ export const HeroRightContainer = styled.div`
 `;
 
 export const Img = styled.img`
-  position: relative;
-  width: 100%;
-  height: 100%;
-  max-width: 400px;
-  max-height: 400px;
+  width: 400px;
+  height: 400px;
   border-radius: 50%;
-  border: 2px solid ${({ theme }) => theme.primary};
+  overflow: hidden;
+  border: 6px solid #c770f0;
+  box-shadow: 0 0 25px rgba(199, 112, 240, 0.5);
+
+  /* Focus on the face */
+  object-fit: cover;         /* fills the container while keeping aspect ratio */
+  object-position: center;   /* centers the face in the circle */
+
+  /* Laptop / Large screen */
+  margin-top: -155px;
 
   @media (max-width: 768px) {
     max-width: 400px;
     max-height: 400px;
+    margin-top: 0;
   }
 
   @media (max-width: 640px) {
     max-width: 280px;
     max-height: 280px;
+    margin-top: 0;
   }
 `;
+
+
 
 export const Title = styled.div`
   font-weight: 700;
@@ -149,12 +161,21 @@ export const Span = styled.span`
   color: ${({ theme }) => theme.primary};
   cursor: pointer;
 `;
-
 export const SubTitle = styled.div`
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 20px;
+    text-align: justify;
   line-height: 32px;
   margin-bottom: 42px;
   color: ${({ theme }) => theme.text_primary + 95};
+  font-weight: 500;
+  letter-spacing: 0.5px;
+
+  span.highlight {
+    font-weight: 700;
+    color: black;
+  }
 
   @media (max-width: 960px) {
     text-align: center;
@@ -162,42 +183,47 @@ export const SubTitle = styled.div`
 
   @media (max-width: 640px) {
     font-size: 16px;
-    line-height: 32px;
+    line-height: 28px;
   }
 `;
 
-export const ResumeButton = styled.a`
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
-    text-decoration: none;
-    width: 95%;
-    max-width: 300px;
-    text-align: center;
-    padding: 16px 0;
-    color:${({ theme }) => theme.white};
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: 600;
-    transition: all 0.2s ease-in-out !important;
-    background: hsla(271, 100%, 50%, 1);
-    background: linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-    background: -moz-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-    background: -webkit-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-    box-shadow:  20px 20px 60px #1F2634,
-    -20px -20px 60px #1F2634;
-    &:hover {
-        transform: scale(1.05);
-    transition: all 0.4s ease-in-out;
-    box-shadow:  20px 20px 60px #1F2634,
-    filter: brightness(1);
-    }    
-    
-    
-    @media (max-width: 640px) {
-        padding: 12px 0;
-        font-size: 18px;
-    } 
 
+
+
+
+export const ResumeButton = styled.a`
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none;
+  width: 95%;
+  max-width: 300px;
+  text-align: center;
+  padding: 20px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+  transition: all 0.3s ease-in-out;
+  border: none;
+
+  /* 💜 Gradient background */
+  background: linear-gradient(135deg,rgb(231, 146, 242) 0%,rgb(122, 124, 237) 100%);
+
+  /* ✅ White text */
+  color: #ffffff;
+
+  /* Soft shadow */
+  box-shadow: 0px 10px 25px rgba(161, 140, 209, 0.3);
+
+  &:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #fbc2eb 0%, #a18cd1 100%);
+    box-shadow: 0px 12px 30px rgba(161, 140, 209, 0.5);
+  }
+
+  @media (max-width: 640px) {
+    padding: 12px 0;
+    font-size: 18px;
+  }
 `;

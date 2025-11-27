@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 
 export const Nav = styled.div`
-    background-color: ${({theme}) => theme.card_light};
+    background-color:rgb(192, 129, 243);
     height: 80px;
     display: flex;
     align-items: center;
@@ -59,6 +59,7 @@ export const NavItems = styled.ul`
 
 export const NavLink = styled.a`
     color: ${({ theme }) => theme.text_primary};
+    color:white;
     font-weight: 500;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
@@ -80,6 +81,7 @@ export const GitHubButton = styled.a`
   align-items: center;
   height: 70%;
   border-radius: 20px;
+  background: white;
   color: ${({ theme }) => theme.primary};
   cursor: pointer;
   padding: 0 20px;
@@ -93,6 +95,7 @@ export const GitHubButton = styled.a`
     }
     @media screen and (max-width: 768px) { 
     font-size: 14px;
+    
     }
 `;
 

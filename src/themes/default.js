@@ -1,26 +1,49 @@
-export default  {
-    // Temp fonts
-    fonts: {
-      title: "Space Grotesk, sans-serif",
-      main: "Space Grotesk, sans-serif"
-    },
-    
-    colors: {
-      primary1: "#854CE6",
-      background1: "#222A35",
-      button: "#854CE6",
-      background2: "#19212C",
-      text: "#C8CFD8",
-      text1: "#F2F5F7",
-      text2: "#626970",
-      text3: "#575C66",
-      footerBackground: "#00012B"
-    },
-    
-    breakpoints: {
-      sm: 'screen and (max-width: 640px)',
-      md: 'screen and (max-width: 768px)',
-      lg: 'screen and (max-width: 1024px)',
-      xl: 'screen and (max-width: 1280px)'
-    },
+// utils/Themes.js
+
+export const lightTheme = {
+  fonts: {
+    title: "Space Grotesk, sans-serif",
+    main: "Space Grotesk, sans-serif"
+  },
+  colors: {
+    primary1: "#6C63FF",
+    background1: "#F9FAFB",
+    button: "#FF6B6B",
+    background2: "#FFFFFF",
+    text: "#333333",
+    text1: "#111111",
+    text2: "#555555",
+    text3: "#888888",
+    footerBackground: "#F0F2F5"
+  },
+  breakpoints: {
+    sm: 'screen and (max-width: 640px)',
+    md: 'screen and (max-width: 768px)',
+    lg: 'screen and (max-width: 1024px)',
+    xl: 'screen and (max-width: 1280px)'
   }
+};
+
+export const darkTheme = {
+  fonts: {
+    title: "Space Grotesk, sans-serif",
+    main: "Space Grotesk, sans-serif"
+  },
+  colors: {
+    primary1: "#854CE6",
+    background1: "#222A35",
+    button: "#854CE6",
+    background2: "#19212C",
+    text: "#C8CFD8",
+    text1: "#F2F5F7",
+    text2: "#626970",
+    text3: "#575C66",
+    footerBackground: "#00012B"
+  },
+  breakpoints: {
+    sm: 'screen and (max-width: 640px)',
+    md: 'screen and (max-width: 768px)',
+    lg: 'screen and (max-width: 1024px)',
+    xl: 'screen and (max-width: 1280px)'
+  }
+};

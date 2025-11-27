@@ -21,29 +21,43 @@ const Card = styled.div`
     background-color: ${({ theme }) => theme.card};
     cursor: pointer;
     border-radius: 10px;
-    box-shadow: 0 0 12px 4px rgba(0,0,0,0.4);
+    box-shadow: 0 0 12px 4px rgba(185, 167, 180, 0.4);
     overflow: hidden;
     padding: 26px 20px;
     display: flex;
     flex-direction: column;
     gap: 14px;
     transition: all 0.5s ease-in-out;
+
+    /* Center the card */
+    margin: 0 auto;
+
     &:hover {
         transform: translateY(-10px);
-        box-shadow: 0 0 50px 4px rgba(0,0,0,0.6);
+        box-shadow: 0 0 50px 4px rgba(15, 15, 15, 0.6);
         filter: brightness(1.1);
     }
+
     &:hover ${Button} {
         display: block;
     }
-`
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        width: 90%;  /* optional for tablets */
+    }
+
+    @media (max-width: 480px) {
+        width: 95%;  /* optional for mobile */
+    }
+`;
 
 const Image = styled.img`
     width: 100%;
     height: 180px;
     background-color: ${({ theme }) => theme.white};
     border-radius: 10px;
-    box-shadow: 0 0 16px 2px rgba(0,0,0,0.3);
+    box-shadow: 0 0 16px 2px rgba(253, 41, 217, 0.3);
 `
 
 const Tags = styled.div`
@@ -118,7 +132,7 @@ const Avatar = styled.img`
     border-radius: 50%;
     margin-left: -10px;
     background-color: ${({ theme }) => theme.white};
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    box-shadow: 0 0 10px rgba(249, 5, 249, 0.2);
     border: 3px solid ${({ theme }) => theme.card};
 `
 

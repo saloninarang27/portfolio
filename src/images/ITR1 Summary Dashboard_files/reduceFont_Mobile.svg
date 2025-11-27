@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="round-person_add-24px" width="16" height="16" viewBox="0 0 16 16">
+    <defs>
+        <style>
+            .cls-1{fill:none}.cls-2{fill:rgba(0,0,0,.6)}
+        </style>
+    </defs>
+    <path id="Path_30" d="M0 0h16v16H0z" class="cls-1" data-name="Path 30"/>
+    <path id="Path_31" d="M7 10H5a1 1 0 0 0 0 2h3a1 1 0 0 0 0-2z" class="cls-2" data-name="Path 31" transform="translate(6 -7.295)"/>
+    <path id="Path_33" d="M15 5a1.137 1.137 0 0 0-1.05.69l-3.88 8.97a.964.964 0 1 0 1.78.74l.66-1.6h5l.66 1.6a.959.959 0 1 0 1.77-.74l-3.88-8.97A1.162 1.162 0 0 0 15 5zm-1.87 7L15 6.98 16.87 12h-3.74z" class="cls-2" data-name="Path 33" transform="translate(-7.714 -2.154)"/>
+</svg>
